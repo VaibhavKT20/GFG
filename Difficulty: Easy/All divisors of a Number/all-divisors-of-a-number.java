@@ -1,0 +1,16 @@
+class Solution {
+    public static void print_divisors(int n) {
+        // code here
+        int i;
+        for(i=1;i*i<=n;i++){
+            if(n%i==0){
+                System.out.print(i+" ");
+            }
+        }
+        for(i=i-1;i>=1;i--){
+            if(n%i==0&& i!=n/i){
+                System.out.print(n/i+" "); 
+            }
+        }
+    }
+}
